@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  alpine-binary-c-dynamic-hl-hobo:
+    build: .
+    image: alpine-binary-c-dynamic-hl:latest
+    hostname: 'hobo'
+    environment:
+      - HL_USER_USERNAME=hacker
+      - HL_USER_PASSWORD=compass
+    ports:
+      - "80:80"
+      - "1234:1234"
+
