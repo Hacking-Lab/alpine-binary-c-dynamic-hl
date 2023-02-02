@@ -11,4 +11,4 @@ services:
     ports:
       - "80:80"
       - "1234:1234"
-
+    env_file: env_file_flag.env
