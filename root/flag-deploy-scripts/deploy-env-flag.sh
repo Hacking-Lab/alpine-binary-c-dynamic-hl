@@ -12,6 +12,6 @@ echo $FLAG > /src/flag.txt
 
 # Compiling binary from source ( replace the binary with the one from the challenge - /src/binary.c)
 cd /src
-exec gcc /src/binary.c /src/flag.c -o /web/binary -lseccomp 
+exec gcc /src/binary.c /src/flag.c -o /opt/www/binary -lseccomp 
 
 #Make tar and Copy the compile binary to the /opt/www/server folder
