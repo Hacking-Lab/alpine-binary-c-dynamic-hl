@@ -2,6 +2,8 @@
 
 ARCH=$(uname -m)
 
+gcc /src/binary.c /src/flag.c -o /opt/www/binary -lseccomp
+
 if [ "$ARCH" == "x86_64" ]; then
     cp /lib/ld-musl-x86_64.so.1 / && \
     cp /usr/lib/libseccomp.so.* / && \
